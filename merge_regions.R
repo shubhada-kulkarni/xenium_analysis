@@ -14,7 +14,7 @@ print("Reading individual region objects")
 region1 <- readRDS(region1_file)
 region2 <- readRDS(region2_file)
 
-prinnt("Merging")
+print("Merging")
 xenium.obj <- merge(region1, y = region2, add.cell.ids = c("region1", "region2"), project = "slide_name")
 
 out_rds <- paste("/prj/XeniumProbeDesign/kidney_Nphs2-mice_Xenium_Martin/xenium_objects_R/", slide_name, "_merged.rds", sep = "")
