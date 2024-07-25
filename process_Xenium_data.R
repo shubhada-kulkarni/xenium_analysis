@@ -29,7 +29,7 @@ xenium.obj <- FindClusters(xenium.obj, resolution = 0.25)
 # saving processed object
 print("Saving the processed Xenium object")
 outRDS_processed <- paste(out_path, id, "_processed.rds", sep="")
-saveRDS(outRDS_processed, file = outRDS_processed)
+saveRDS(xenium.obj, file = outRDS_processed)
 
 # colouring cells by clusters
 ImageDimPlot(xenium.obj, cols = "polychrome", size = 0.75)
