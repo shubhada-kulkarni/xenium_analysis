@@ -10,12 +10,14 @@ editor: visual
 
 This Quarto computational documents includes post-processing of already clustered Xenium data generated using `process_Xenium_data.R` script. This post-processing includes
 
-* [] Merging and batch-effect correction of data per slide.
-* [] Post-merging processing
-* [] Cell-type annotations
+-   \[\] Merging and batch-effect correction of data per slide.
+-   \[\] Post-merging processing
+-   \[\] Cell-type annotations
 
 ## Cell-type annotations
-Loading required libraries 
+
+Loading required libraries
+
 ```{r}
 library(ggplot2, lib.loc = "/beegfs/homes/skulkarni/R/x86_64-pc-linux-gnu-library/4.3")
 library(Seurat, lib.loc = "/beegfs/homes/skulkarni/R/x86_64-pc-linux-gnu-library/4.3")
@@ -27,49 +29,50 @@ library(presto, lib.loc = "/beegfs/homes/skulkarni/R/x86_64-pc-linux-gnu-library
 ```
 
 ### Slide 0027119 (7/3 male R231Q/wt)
-Read in stored Xenium objects for both regions for _0027119_
+
+Read in stored Xenium objects for both regions for *0027119*
+
 ```{r eval=F}
 region1 <- readRDS("/prj/XeniumProbeDesign/kidney_Nphs2-mice_Xenium_Martin/xenium_objects_R/output-XETG00046__0027119__Region_1__20240621__120943_processed.rds")
 region2 <- readRDS("/prj/XeniumProbeDesign/kidney_Nphs2-mice_Xenium_Martin/xenium_objects_R/output-XETG00046__0027119__Region_2__20240621__120943_processed.rds")
 ```
 
 Dimplots of both regions
-```{r fig.align='center', eval=FALSE}
+
+```{r fig.align='center',fig.width=20,fig.height=12,warning=FALSE}
 p1 <- DimPlot(region1) + labs(title = "Region 1")
 p2 <- DimPlot(region1) + labs(title = "Region 2")
-p1 + p2
+p1 | p2
 ```
+
 As DimPlots of region1 and region2 are not so different + they seem to share many marker genes, the cell-type annotations will be performed on 1 region and will be used for the second region as well.
 
 #### Merging the two regions and post-processing
-A separate R script was used to perform merging of two regions, as memory was running out. This R script was submitted as a SLURM job. 
-Output of this script is a processed merged Xenium objects that contain both regions.
-Following operations have been performed during above processing:
-* Merging
-* Normalising and scaling data
-* Re-computing PCA and UMAP
-* Finding neighbors
-* Finding clusters
 
-In next steps, cluster annotation will be performed.
-#### Marker gene analysis
-Read in the RDS merged object created by above R script
+A separate R script was used to perform merging of two regions, as memory was running out. This R script was submitted as a SLURM job. Output of this script is a processed merged Xenium objects that contain both regions. Following operations have been performed during above processing: \* Merging \* Normalising and scaling data 
+\* Re-computing PCA and UMAP \* Finding neighbors \* Finding clusters
+
+In next steps, cluster annotation will be performed. \#### Marker gene analysis Read in the RDS merged object created by above R script
+
 ```{r eval=FALSE}
 xenium.obj.0027119 <- readRDS("/prj/XeniumProbeDesign/kidney_Nphs2-mice_Xenium_Martin/xenium_objects_R/0027119_merged_processed.rds")
 ```
 
 Finding marker genes using presto package (much faster than Seurat functions)
+
 ```{r eval=FALSE}
 all_markers_0027119 <- presto::wilcoxauc(xenium.obj.0027119,  seurat_assay = "SCT", group_by = "seurat_clusters")
 write.csv(all_markers_0027119, "/prj/XeniumProbeDesign/kidney_Nphs2-mice_Xenium_Martin/xenium_objects_R/0027119_merged_markergenes.csv", quote = F)
 ```
 
 #### Cell-type annotations
-For selection of marker genes per cell-type, I looked into multiple papers publishing scRNA-seq mouse kidney. However, after trying multiple ones, following paper had the most overlapping cell-types https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10690238/#SD1 
+
+For selection of marker genes per cell-type, I looked into multiple papers publishing scRNA-seq mouse kidney. However, after trying multiple ones, following paper had the most overlapping cell-types https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10690238/#SD1
 
 For the sake of saving time to load featureplot for every gene, only one gene plot is shown
 
 Function to plot expression levels on UMAP and spatial level
+
 ```{r eval=FALSE}
 plot_featureplots <- function(gene){
   p1 <- FeaturePlot(xenium.obj.0027119, c(gene), label = T) + labs(title = "On UMAP Level")
@@ -78,91 +81,108 @@ plot_featureplots <- function(gene){
 }
 ```
 
-Podocytes markers -> Nphs2, Ddn, Clic3 and Rab3b
-```{r eval=FALSE}
+Podocytes markers -\> Nphs2, Ddn, Clic3 and Rab3b
+
+```{r fig.width=20,fig.height=12,warning=FALSE}
 plot_featureplots("Nphs2")
 ```
+
 Cluster 9 and 14 are podocytes.
 
-PTS1/2/3 – proximal tubule segment
-1 -> Slc22a8, Lrp2, Cyp4b1
-2 -> same
-3 -> Aadat, Aqp1
-```{r eval=FALSE}
+PTS1/2/3 -- proximal tubule segment 1 -\> Slc22a8, Lrp2, Cyp4b1 2 -\> same 3 -\> Aadat, Aqp1
+
+```{r fig.width=20,fig.height=12,warning=FALSE}
 plot_featureplots("Slc22a8")
 ```
 
-```{r eval=FALSE}
+```{r fig.width=20,fig.height=12,warning=FALSE}
 plot_featureplots("Aqp1")
 ```
+
 Cluster 0, 20, 28, 2, 21, 15, 26, 36, 11, 30, 31, 24, 35, 1, 34 are proximal tubule segment clusters 1, 2and 3.
 
-thin limb of the loop of Henle (LOH) associated cells -> Bst1, Aqp1, Cryab,  Pax8, Upk3b
-```{r eval=FALSE}
+thin limb of the loop of Henle (LOH) associated cells -\> Bst1, Aqp1, Cryab, Pax8, Upk3b
+
+```{r fig.width=20,fig.height=12,warning=FALSE}
 plot_featureplots("Bst1")
 ```
+
 Cluster 17 is LOH cells
 
-Thick ascending limb of the loop of Henle (TAL) 
-TAL1 -> Sostdc1, Gpx6, Ppargc1a, Prox1
-TAL2 -> ""Slc5a1"","Dusp15" + TAL1
-TAL3 -> "Gpx6","Scin"
-```{r eval=FALSE}
+Thick ascending limb of the loop of Henle (TAL) TAL1 -\> Sostdc1, Gpx6, Ppargc1a, Prox1 TAL2 -\> ""Slc5a1"","Dusp15" + TAL1 TAL3 -\> "Gpx6","Scin"
+
+```{r fig.width=20,fig.height=12,warning=FALSE}
 plot_featureplots("Ppargc1a")
 ```
+
 Clusters 4, 8, 10, 25, 33 are TAL clusters
 
-Distal convoluted and connecting tubule (DCT-CNT) -> Calb1, Hsd11b2, Ldhb
-```{r eval=FALSE}
+Distal convoluted and connecting tubule (DCT-CNT) -\> Calb1, Hsd11b2, Ldhb
+
+```{r fig.width=20,fig.height=12,warning=FALSE}
 plot_featureplots("Hsd11b2")
 ```
+
 Clusters 5 and 29 are DCT-CNT cells
 
-Principal cells (PC) -> "Fxyd4", "Hsd11b2", "Aqp3" 
-```{r eval=FALSE}
+Principal cells (PC) -\> "Fxyd4", "Hsd11b2", "Aqp3"
+
+```{r fig.width=20,fig.height=12,warning=FALSE}
 plot_featureplots("Fxyd4")
 ```
 
-Intercalated cells (IC) -> "Slc4a1", "Car2"
-```{r eval=FALSE}
+Intercalated cells (IC) -\> "Slc4a1", "Car2"
+
+```{r fig.width=20,fig.height=12,warning=FALSE}
 plot_featureplots("Slc4a1")
 ```
+
 Both IC and PC cells overlap with DCT-CNT cells. So clusters 5 and 29 are DCT, IC and PC cells.
 
-Urothelium -> Upk1b, Upk3b
-```{r eval=FALSE}
+Urothelium -\> Upk1b, Upk3b
+
+```{r fig.width=20,fig.height=12,warning=FALSE}
 plot_featureplots("Upk1b")
 ```
+
 Cluster 22 is urothelium cells
 
-Fibroblasts -> Fbln5, Angptl2, "Mylk", "Col4a2"
-```{r eval=FALSE}
+Fibroblasts -\> Fbln5, Angptl2, "Mylk", "Col4a2"
+
+```{r fig.width=20,fig.height=12,warning=FALSE}
 plot_featureplots("Fbln5")
 ```
+
 Clusters 6, 12, 13 and 16 are fibroblasts
 
-Pericytes -> Myh11, Ren1, Gja5
-```{r eval=FALSE}
+Pericytes -\> Myh11, Ren1, Gja5
+
+```{r fig.width=20,fig.height=12,warning=FALSE}
 plot_featureplots("Fbln5")
 ```
+
 Cluster 8 is Pericytes
 
-Vascular cells -> Plvap, Kdr
-```{r eval=FALSE}
+Vascular cells -\> Plvap, Kdr
+
+```{r fig.width=20,fig.height=12,warning=FALSE}
 plot_featureplots("Fbln5")
 ```
+
 Cluster 3 is vascular cells
 
-Macrophages -> "C5ar1", "Cybb", "Mpeg1"
-```{r eval=FALSE}
+Macrophages -\> "C5ar1", "Cybb", "Mpeg1"
+
+```{r fig.width=20,fig.height=12,warning=FALSE}
 plot_featureplots("Cybb")
 ```
+
 Cluster 7 is macrophages
 
-Dendritic cell genes were not present in the gene panel so not found.
-T cells were also not found in this dataset.
+Dendritic cell genes were not present in the gene panel so not found. T cells were also not found in this dataset.
 
 Rename all clusters.
+
 ```{r eval=FALSE}
 new.cluster.ids <- c("PT", "PT", "PT", "Vascular", "TAL", "DCT-IC-PC",  "Fibroblasts", "Macrophages", "TAL", 
                      "Podocytes", "TAL", "PT", "Fibroblasts", "Fibroblasts", "Podocytes", "PT", "Fibroblasts",
@@ -173,33 +193,45 @@ xenium.obj.0027119 <- RenameIdents(xenium.obj.0027119, new.cluster.ids)
 ```
 
 DimPlot after changing cluster names
+
 ```{r fig.align='center'}
 DimPlot(xenium.obj.0027119, label = T)
 ```
 
 ImagePlot after changing cluster names
+
 ```{r fig.align='center'}
 ImageDimPlot(xenium.obj.0027119, dark.background = F)
 ```
 
-
 <!-- ### Slide 0027120 (4/1 male compound het) -->
 
 <!-- Read in stored Xenium objects for both regions for _0027120_ -->
+
 <!-- ```{r eval=F} -->
+
 <!-- region1 <- readRDS("/prj/XeniumProbeDesign/kidney_Nphs2-mice_Xenium_Martin/xenium_objects_R/output-XETG00046__0027120__Region_1__20240621__120943_processed.rds") -->
+
 <!-- region2 <- readRDS("/prj/XeniumProbeDesign/kidney_Nphs2-mice_Xenium_Martin/xenium_objects_R/output-XETG00046__0027120__Region_2__20240621__120943_processed.rds") -->
+
 <!-- ``` -->
 
 <!-- Dimplots of both regions -->
+
 <!-- ```{r fig.align='center', eval=FALSE} -->
+
 <!-- p1 <- DimPlot(region1) + labs(title = "Region 1") -->
+
 <!-- p2 <- DimPlot(region1) + labs(title = "Region 2") -->
+
 <!-- p1 + p2 -->
+
 <!-- ``` -->
 
 <!-- Merging -->
-<!-- ```{r} -->
-<!-- xenium_0027120 <- merge(region1, y = region2, add.cell.ids = c("region1", "region2"), project = "Xenium_0027120") -->
-<!-- ``` -->
 
+<!-- ```{r} -->
+
+<!-- xenium_0027120 <- merge(region1, y = region2, add.cell.ids = c("region1", "region2"), project = "Xenium_0027120") -->
+
+<!-- ``` -->
