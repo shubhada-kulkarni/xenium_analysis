@@ -26,7 +26,7 @@ print("Process the merged data")
 xenium.obj@meta.data$region <- unlist(lapply(rownames(xenium.obj@meta.data), function(x) strsplit(x, "_")[[1]][1]))
 features <- Features(xenium.obj)
 print("Normalise and scale the merged data")
-xenium.obj <- NormalizeData(xenium.obj)
+#xenium.obj <- NormalizeData(xenium.obj)
 xenium.obj <- ScaleData(xenium.obj)
 # variable features set to all genes,  for PCA calculations
 VariableFeatures(xenium.obj) <- features
