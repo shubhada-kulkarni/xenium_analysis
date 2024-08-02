@@ -14,3 +14,5 @@ __postprocessing_Kidney_Xenium.qmd and postprocessing_Kidney_Xenium.html__ : Mar
 __figs/__ : Folder with all figures
 
 __postprocessing_humanheart_Xenium.qmd and postprocessing_humanheart_Xenium.html__ : Markdown document and report for cluster annotation analysis for pilot Xenium experiment on human patient heart AV node
+
+__slurm_Xenium_resegmentation.sh__ : Bash script to perform re-segmentation using `xeniumranger` (to be submitted as a job)
