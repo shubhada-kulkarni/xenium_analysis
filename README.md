@@ -17,4 +17,4 @@ __postprocessing_humanheart_Xenium.qmd and postprocessing_humanheart_Xenium.html
 
 __slurm_Xenium_resegmentation.sh__ : Bash script to perform re-segmentation using `xeniumranger` (to be submitted as a job)
 
-__slurm_Xenium_resegmentation.sh__ : Bash script to import segmentations from external tools into Xenium (to be submitted as a job)
+__slurm_Xenium_importsegmentation.sh__ : Bash script to import segmentations from external tools into Xenium (to be submitted as a job)
