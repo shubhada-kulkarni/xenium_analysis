@@ -16,7 +16,10 @@ path=`dirname $in_folder`
 
 cd $path
 
+<<<<<<< Updated upstream
 /prj/XeniumProbeDesign/analyser_installation/xeniumranger-xenium2.0/xeniumranger resegment --xenium-bundle $in_folder --id $out_id
+=======
+>>>>>>> Stashed changes
 ##########################
 ## Do not use boundary stain in analysis, but keep default interior stain and DAPI
 #/prj/XeniumProbeDesign/analyser_installation/xeniumranger-xenium2.0/xeniumranger resegment --xenium-bundle $in_folder --id $out_id --boundary-stain=disable --interior-stain=18S --localcores=64 --localmem=256
@@ -27,6 +30,18 @@ cd $path
 # (this option worked the best till now)
 #/prj/XeniumProbeDesign/analyser_installation/xeniumranger-xenium2.0/xeniumranger resegment --xenium-bundle $in_folder --id $out_id --boundary-stain=disable --interior-stain=disable --localcores=128 --localmem=256
 
+<<<<<<< Updated upstream
 # trying above option with larger expansion distances
 /prj/XeniumProbeDesign/analyser_installation/xeniumranger-xenium2.0/xeniumranger resegment --xenium-bundle $in_folder --id $out_id --boundary-stain=disable --interior-stain=disable --localcores=128 --localmem=256 --expansion-distance=10
 ##########################
+=======
+##########################
+
+## trying above option with larger expansion distances
+#/prj/XeniumProbeDesign/analyser_installation/xeniumranger-xenium2.0/xeniumranger resegment --xenium-bundle $in_folder --id $out_id --boundary-stain=disable --interior-stain=disable --localcores=128 --localmem=256 --expansion-distance=10
+
+##########################
+
+# Do not use either boundary or interior stain and only use DAPI for nuclear expansion with expansion distance 0 (recommended by Lorena)
+/prj/XeniumProbeDesign/analyser_installation/xeniumranger-xenium2.0/xeniumranger resegment --xenium-bundle $in_folder --id $out_id --boundary-stain=disable --interior-stain=disable --localcores=128 --localmem=256 --expansion-distance=0
+>>>>>>> Stashed changes
