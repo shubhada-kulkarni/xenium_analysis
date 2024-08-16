@@ -11,18 +11,23 @@ outpath = os.path.dirname(tiff)
 
 # Variable 'LEVEL' determines the level to extract. It ranges from 0 (highest
 # resolution) to 6 (lowest resolution) for morphology.ome.tif
-LEVEL = 1   # highest resolution 0 did not work, so gave 1
+# LEVEL = 6   # highest resolution 0 did not work, so gave 1
+level_array = [1, 2, 3, 4, 5, 6]
 
-with tifffile.TiffFile(tiff) as tif:
-    image = tif.series[0].levels[LEVEL].asarray()
 
-tifffile.imwrite(outpath+'/cellpose_level_'+str(LEVEL)+'_morphology.ome.tif',
-    image,
-    photometric='minisblack',
-    dtype='uint16',
-    tile=(1024, 1024),
-    compression='JPEG_2000_LOSSY',
-    metadata={'axes': 'ZYX'},
-)
+for LEVEL in level_array:
+    print(LEVEL)
+
+    with tifffile.TiffFile(tiff) as tif:
+        image = tif.series[0].levels[LEVEL].asarray()
+    
+    tifffile.imwrite(outpath+'/cellpose_level_'+str(LEVEL)+'_morphology.ome.tif',
+        image,
+        photometric='minisblack',
+        dtype='uint16',
+        tile=(1024, 1024),
+        compression='JPEG_2000_LOSSY',
+        metadata={'axes': 'ZYX'},
+    )
 
 
