@@ -12,12 +12,17 @@ def main():
     list_s = []
     list_i = []
     cell_ids_int = []
+    count = 1   # count for unassigned cells
     data_frame = pd.read_csv(args.transcript)
     cellids = data_frame["cell_id"].tolist()
     for each in cellids:
         each = each.split("-")[0]
         if (each == "UNASSIGNED"):
-            cell_ids_int.append(-1)
+            cell = str(count)
+            cell_int = convertToNumber(cell)
+            cell_ids_int.append(cell_int)
+            #print(cell, cell_int)
+            count = count + 1
         else:
             #list_s.append(each)
             cell_int = convertToNumber(each)
@@ -40,9 +45,9 @@ def main():
                                 (~data_frame["feature_name"].str.startswith("NegControlCodeword_")) &
                                 (~data_frame["feature_name"].str.startswith("BLANK_"))]
 
-    ## Change cell_id of cell-free transcripts from -1 to 0
-    neg_cell_row = filtered_frame["cell_id"] == "UNASSIGNED"
-    filtered_frame.loc[neg_cell_row,"cell_id_int"] = 0
+    ### Change cell_id of cell-free transcripts from -1 to 0
+    #neg_cell_row = filtered_frame["cell_id"] == "UNASSIGNED"
+    #filtered_frame.loc[neg_cell_row,"cell_id_int"] = 0
 
     # Output filtered transcripts to CSV
     #filtered_frame.to_csv('_'.join(["X"+str(args.min_x)+"-"+str(args.max_x), "Y"+str(args.min_y)+"-"+str(args.max_y), "filtered_transcripts.csv"]),
