@@ -11,4 +11,4 @@ cd /prj/XeniumProbeDesign/analysis_scripts/
 
 module load R/4.4.1_deb12
 
-Rscript --vanilla process_Xenium_data.R $1
+Rscript --vanilla process_Xenium_data.R $1 $2
