@@ -1,0 +1,117 @@
+Loading required package: SeuratObject
+Loading required package: sp
+
+Attaching package: ‘SeuratObject’
+
+The following objects are masked from ‘package:base’:
+
+    %||%, intersect, t
+
+
+Attaching package: ‘Seurat’
+
+The following object is masked from ‘package:base’:
+
+    %||%
+
+Loading required package: Rcpp
+Loading required package: RcppParallel
+
+Attaching package: ‘RcppParallel’
+
+The following object is masked from ‘package:Rcpp’:
+
+    LdFlags
+
+
+Rfast2:  0.1.5.2
+ ___ __ __ __ __    __ __ __ __ __ _             _               __ __ __ __ __     __ __ __ __ __ __   
+|  __ __ __ __  |  |  __ __ __ __ _/            / \             |  __ __ __ __ /   /__ __ _   _ __ __\  
+| |           | |  | |                         / _ \            | |                        / /          
+| |           | |  | |                        / / \ \           | |                       / /          
+| |           | |  | |                       / /   \ \          | |                      / /          
+| |__ __ __ __| |  | |__ __ __ __           / /     \ \         | |__ __ __ __ _        / /__/\          
+|    __ __ __ __|  |  __ __ __ __|         / /__ _ __\ \        |_ __ __ __ _   |      / ___  /           
+|   \              | |                    / _ _ _ _ _ _ \                     | |      \/  / /       
+| |\ \             | |                   / /           \ \                    | |         / /          
+| | \ \            | |                  / /             \ \                   | |        / /          
+| |  \ \           | |                 / /               \ \                  | |       / /          
+| |   \ \__ __ _   | |                / /                 \ \     _ __ __ __ _| |      / /          
+|_|    \__ __ __\  |_|               /_/                   \_\   /_ __ __ __ ___|      \/             team
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+Key ‘Xenium_’ taken, using ‘fov2_’ instead 
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+PC_ 1 
+Positive:  CD34, TCF4, PECAM1, CLEC14A, FBN1, CD93, VWF, MMRN2, EGFL7, PDGFRB 
+	   RAMP2, APOLD1, ECSCR, TFPI, SH2D3C, FBLN1, COL5A2, NPDC1, INMT, ADGRL4 
+	   TCIM, RAPGEF3, VCAN, COL1A1-FSJ2, MCF2L, SOX18, THBS2, LTBP2, ASPN, IGFBP7-FSJ2 
+Negative:  ACTN2-FSJ1, TTN-FSJ3, TNNT2-FSJ3, DES, S100A1, FHL2, SMYD2, ACTG2, PTGDS, GPC1 
+	   ANKRD1-FSJ, LPL, SLC8A1-BSJ, PLIN4, CNN1, SLC8A1-FSJ, RBM20-FSJ2, PEBP4, PROX1, APOBEC2-FSJ1 
+	   FSTL3, MLIP-FSJ, HMGCS2, RPL3L-FSJ2, PPP1R12B-FSJ, SEMA3C, RRAS2-FSJ, ACE2, AR, BAMBI 
+PC_ 2 
+Positive:  CAV1, ACTG2, SLC8A1-BSJ, CAVIN2, VWF, GNG11, ACTN2-FSJ1, FHL2, TTN-FSJ3, DES 
+	   S100A1, PECAM1, PTGDS, APOLD1, CAVIN1, ADGRL4, CLEC14A, ADAMTS1, DST, SMYD2 
+	   RAMP2, MMRN2, SH2D3C, MEF2C, CD93, ANKRD1-FSJ, LPL, TNNT2-FSJ3, ECSCR, SOX18 
+Negative:  LTBP2, FBLN1, COL1A1-FSJ2, SFRP4, VCAN, THBS2, OGN, PDGFRA, PCOLCE, CFHR3 
+	   IGF1, CD4, CD163, FBN1, COL5A2, GPC3, MS4A4A, C7, CRISPLD2, MS4A6A 
+	   LYVE1, MPEG1, VSIG4, KCNMA1, CD14, CD68, DPT, CLEC10A, LILRB2, MFAP5 
+PC_ 3 
+Positive:  MPEG1, MS4A6A, CD14, VSIG4, CD4, CD163, MS4A4A, VCAN, LYVE1, PTPRC 
+	   AIF1, LILRB2, MRC1, MAMDC2, CD68, GLIPR1, FBLN1, PTN, THBS2, CLEC10A 
+	   MFAP5, LTBP2, FGL2, DPT, FBN1, PMP22, APCDD1, PDGFRA, PCOLCE, COL1A1-FSJ2 
+Negative:  VWF, MMRN2, MCF2L, EGFL7, ECSCR, APOLD1, SH2D3C, BTNL9, ADGRL4, RAMP2 
+	   RAPGEF3, PECAM1, SOX18, CLEC14A, MALL, STC1, TCIM, ERG, TCF15, CD93 
+	   GATA2, SOX17, CAVIN2, CA4, TM4SF18, CXCL2, NPDC1, EDNRB, SNCG, IL3RA 
+PC_ 4 
+Positive:  FBN1, LTBP2, FBLN1, THBS2, ASPN, MFAP5, VCAN, COL5A2, COL1A1-FSJ2, DPT 
+	   PDGFRA, SFRP4, APCDD1, PTN, PCOLCE, CRISPLD2, OGN, EGFR, TNC, C7 
+	   TFPI, CTSK, IGF1, MEDAG, CFHR3, PDGFRB, IGFBP7-FSJ2, PMP22, STEAP4, SRPX 
+Negative:  MS4A6A, MPEG1, CD14, VSIG4, CD163, PTPRC, MS4A4A, LILRB2, LYVE1, MRC1 
+	   CD4, CLEC10A, AIF1, CSF2RA, FCGR3A, CXCR4, HLA-DQB2, HAVCR2, SPI1, CLEC4E 
+	   IRF8, CD68, CD86, ADAM28, C1orf162, CYTIP, MNDA, GPR183, FCGR1A, FGL2 
+PC_ 5 
+Positive:  TRAC, CCL5, CD247, CD2, CD3E, CXCR4, PRDM1, CYTIP, CD3D, PRF1 
+	   IL7R, GZMA, MYH11, PTPRC, ACTA2, MYLK, NKG7, DUSP2, CD69, KLRB1 
+	   CD8A, GZMK, TENT5C, SLAMF1, PPP1R1A, GNLY, RERGL, KLRD1, CCR2, GZMB 
+Negative:  CD14, LYVE1, MS4A4A, VSIG4, MPEG1, MS4A6A, MRC1, CD163, MFAP5, CA4 
+	   MCF2L, CD93, CD34, CYP4B1, VWF, CD68, SLC8A1-BSJ, DPT, S100A1, MAMDC2 
+	   LILRB2, TM4SF18, CLEC14A, PTGDS, ADGRL4, SPI1, ANKRD1-FSJ, GNG11, APCDD1, IGF1 
+Warning: The default method for RunUMAP has changed from calling Python UMAP via reticulate to the R-native UWOT using the cosine metric
+To use Python UMAP via reticulate, set umap.method to 'umap-learn' and metric to 'correlation'
+This message will be shown once per session
+13:37:15 UMAP embedding parameters a = 0.9922 b = 1.112
+13:37:15 Read 66038 rows and found 30 numeric columns
+13:37:15 Using Annoy for neighbor search, n_neighbors = 30
+13:37:15 Building Annoy index with metric = cosine, n_trees = 50
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+13:37:28 Writing NN index file to temp file /tmp/Rtmpi6QjIO/file18651544a9cead
+13:37:28 Searching Annoy index using 1 thread, search_k = 3000
+13:37:56 Annoy recall = 100%
+13:37:56 Commencing smooth kNN distance calibration using 1 thread with target n_neighbors = 30
+13:38:00 Initializing from normalized Laplacian + noise (using RSpectra)
+13:38:03 Commencing optimization for 200 epochs, with 3165278 positive edges
+Using method 'umap'
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+13:38:45 Optimization finished
+Computing nearest neighbor graph
+Computing SNN
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+2 singletons identified. 18 final clusters.

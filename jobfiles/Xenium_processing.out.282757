@@ -1,0 +1,17 @@
+[1] "/prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_1__20240725__112631/qupath_seg/outs/"
+[2] "18072_region1"                                                                                                     
+[1] "18072_region1"
+[1] "/prj/XeniumProbeDesign/heart_human_29072024/xenium_objects_R/18072_region1_full.rds"
+[1] "Loading in the Xenium data"
+[1] "Processing the Xenium data"
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 32431
+Number of edges: 1216900
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.8387
+Number of communities: 15
+Elapsed time: 9 seconds
+[1] "Saving the processed Xenium object"
+[1] "Done!"

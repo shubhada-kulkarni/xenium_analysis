@@ -1,0 +1,78 @@
+Importing segmentations
+Martian Runtime - v4.0.12
+Serving UI at http://slurm-c-mk1-1c:44263?auth=ci-Yfts7gxYg9n_2huDRj9Ah-0QGwLAs3Dh5V-BEbcc
+
+Running preflight checks (please wait)...
+2024-09-05 13:17:00 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_SETUP_INPUTS
+2024-09-05 13:17:00 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_SETUP_INPUTS.fork0.split
+2024-09-05 13:17:10 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_SETUP_INPUTS
+2024-09-05 13:17:10 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_SETUP_INPUTS.fork0.join
+2024-09-05 13:17:34 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_SETUP_INPUTS
+2024-09-05 13:17:35 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.IMPORT_CELL_SEGMENTATION_DATASET
+2024-09-05 13:17:35 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.IMPORT_CELL_SEGMENTATION_DATASET.fork0.split
+2024-09-05 13:17:35 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RELABEL_TRANSCRIPTS
+2024-09-05 13:17:35 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RELABEL_TRANSCRIPTS.fork0.split
+2024-09-05 13:17:35 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_MORPHOLOGY_PLOTS
+2024-09-05 13:17:35 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_MORPHOLOGY_PLOTS.fork0.split
+2024-09-05 13:17:35 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.SETUP_COUNTER_CS
+2024-09-05 13:17:35 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.SETUP_COUNTER_CS.fork0.split
+2024-09-05 13:17:35 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_TRANSCRIPT_ASSIGNMENTS
+2024-09-05 13:17:35 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.IMPORT_NUCLEAR_SEGMENTATION_DATASET
+2024-09-05 13:17:35 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.IMPORT_NUCLEAR_SEGMENTATION_DATASET.fork0.split
+2024-09-05 13:17:35 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RESEGMENT.SEGMENT_NUCLEI
+2024-09-05 13:17:35 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RESEGMENT.SETUP_CELL_SEGMENTOR_FINALIZER
+2024-09-05 13:17:35 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RESEGMENT._CELL_SEGMENTOR_FINALIZER.SEGMENT_CELLS
+2024-09-05 13:17:35 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RESEGMENT._CELL_SEGMENTOR_FINALIZER.SEGMENT_INTERIOR
+2024-09-05 13:17:35 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RESEGMENT._CELL_SEGMENTOR_FINALIZER.PAIR_CELLS_NUCLEI
+2024-09-05 13:17:35 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RESEGMENT._CELL_SEGMENTOR_FINALIZER.EXPAND_NUCLEI
+2024-09-05 13:17:35 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RESEGMENT._CELL_SEGMENTOR_FINALIZER.GENERATE_CELLS_DATASET
+2024-09-05 13:17:42 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.SETUP_COUNTER_CS
+2024-09-05 13:17:42 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.SETUP_COUNTER_CS.fork0.join
+2024-09-05 13:17:43 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RELABEL_TRANSCRIPTS
+2024-09-05 13:17:43 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RELABEL_TRANSCRIPTS.fork0.join
+2024-09-05 13:17:49 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.SETUP_COUNTER_CS
+2024-09-05 13:17:52 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RELABEL_TRANSCRIPTS
+2024-09-05 13:17:54 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_MORPHOLOGY_PLOTS
+2024-09-05 13:17:54 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_MORPHOLOGY_PLOTS.fork0.join
+2024-09-05 13:17:57 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.IMPORT_CELL_SEGMENTATION_DATASET
+2024-09-05 13:17:57 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.IMPORT_CELL_SEGMENTATION_DATASET.fork0.join
+2024-09-05 13:17:58 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.IMPORT_NUCLEAR_SEGMENTATION_DATASET
+2024-09-05 13:17:58 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.IMPORT_NUCLEAR_SEGMENTATION_DATASET.fork0.join
+2024-09-05 13:18:11 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_MORPHOLOGY_PLOTS
+2024-09-05 13:18:23 [runtime] (failed)          ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.IMPORT_CELL_SEGMENTATION_DATASET
+
+[error] Pipestance failed. Error log at:
+cellpose-seg/XENIUM_RANGER_CS/XR_IMPORT_SEGMENTATION/IMPORT_CELL_SEGMENTATION_DATASET/fork0/join-u8630d9934e/_errors
+
+Log message:
+Traceback (most recent call last):
+  File "/beegfs/prj/XeniumProbeDesign/analyser_installation/xeniumranger-xenium2.0/external/martian/adapters/python/martian_shell.py", line 648, in _main
+    stage.main()
+  File "/beegfs/prj/XeniumProbeDesign/analyser_installation/xeniumranger-xenium2.0/external/martian/adapters/python/martian_shell.py", line 617, in main
+    self._run(
+  File "/beegfs/prj/XeniumProbeDesign/analyser_installation/xeniumranger-xenium2.0/external/martian/adapters/python/martian_shell.py", line 564, in _run
+    cmd()
+  File "/beegfs/prj/XeniumProbeDesign/analyser_installation/xeniumranger-xenium2.0/external/martian/adapters/python/martian_shell.py", line 618, in <lambda>
+    lambda: self._module.join(args, outs, chunk_defs, chunk_outs)
+  File "/beegfs/prj/XeniumProbeDesign/analyser_installation/xeniumranger-xenium2.0/mro/insitu/stages/xr_import_segmentation_dataset/__init__.py", line 95, in join
+    results = import_segmentation.join(
+  File "/beegfs/prj/XeniumProbeDesign/analyser_installation/xeniumranger-xenium2.0/lib/python/turing/engine/xenium_ranger/stages/import_segmentation.py", line 136, in join
+    rles_list, mask, metrics, segmentation_name = import_segmentation_mask(
+  File "/beegfs/prj/XeniumProbeDesign/analyser_installation/xeniumranger-xenium2.0/lib/python/turing/engine/xenium_ranger/import_segmentation/import_dataset.py", line 159, in import_segmentation_mask
+    mask, name = load_and_check_segmentation_mask(input_seg_path, is_cell)
+  File "/beegfs/prj/XeniumProbeDesign/analyser_installation/xeniumranger-xenium2.0/lib/python/turing/engine/xenium_ranger/import_segmentation/import_dataset.py", line 229, in load_and_check_segmentation_mask
+    raise XrInvalidArgumentsError(
+turing.engine.xenium_ranger.xr_common.XrInvalidArgumentsError: Expected the mask data type to be 16 or 32-bit unsigned integer. Found: object
+
+
+Waiting 6 seconds for UI to do final refresh.
+Pipestance failed. Use --noexit option to keep UI running after failure.
+
+2024-09-05 13:18:29 Shutting down.
+Saving pipestance info to "/beegfs/prj/XeniumProbeDesign/analysis_scripts/cellpose-seg/cellpose-seg.mri.tgz"
+For assistance, upload this file to 10x Genomics by running:
+
+xeniumranger upload <your_email> "/beegfs/prj/XeniumProbeDesign/analysis_scripts/cellpose-seg/cellpose-seg.mri.tgz"
+
+Thu Sep  5 01:18:30 PM CEST 2024
+Done

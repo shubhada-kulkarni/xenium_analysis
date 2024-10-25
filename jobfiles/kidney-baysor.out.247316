@@ -1,0 +1,21 @@
+Thu Sep 12 01:34:12 PM CEST 2024
+Unzipping the trancsripts CSV file
+Done
+Thu Sep 12 01:34:12 PM CEST 2024
+formatting the CSV file
+/prj/XeniumProbeDesign/kidney_Nphs2-mice_Xenium_Martin/output-XETG00046__0027120__Region_1__20240621__120943/transcripts.csv, /prj/XeniumProbeDesign/kidney_Nphs2-mice_Xenium_Martin/output-XETG00046__0027120__Region_1__20240621__120943/formatted_transcripts.csv
+File not found! Running filter transcript script to generated formatted transcript CSV file.
+Thu Sep 12 01:45:37 PM CEST 2024
+Running baysor
+[13:45:40] Info: Run R211b84753
+[13:45:41] Info: (2024-09-12) Run Baysor v0.6.2
+[13:45:41] Info: Loading data...
+[13:48:56] Info: Loaded 68722839 transcripts
+[13:49:52] Info: Estimating noise level
+[14:54:10] Info: Done
+[15:26:17] Info: Clustering molecules...
+[22:07:13] Info: Algorithm stopped after 903 iterations. Error: 0.00302. Converged: true.
+[22:07:17] Info: Done
+[22:08:38] Info: Initializing algorithm. Scale: 3.208948723335705, scale std: 0.7636416165575339, initial #components: 13744566, #molecules: 68722839.
+[02:16:22] Info: Using the following additional information about molecules: [:confidence, :cluster, :prior_segmentation]
+[02:16:22] Info: Using 3D coordinates

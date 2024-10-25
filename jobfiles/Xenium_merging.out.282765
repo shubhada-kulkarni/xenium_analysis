@@ -1,0 +1,19 @@
+[1] "Reading individual region objects"
+[1] "Merging"
+[1] "Process the merged data"
+[1] "Normalise and scale the merged data"
+[1] "PCA and UMAP calculations"
+null device 
+          1 
+[1] "Finding neighbors and clustering analysis"
+Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck
+
+Number of nodes: 66038
+Number of edges: 2024302
+
+Running Louvain algorithm...
+Maximum modularity in 10 random starts: 0.8648
+Number of communities: 20
+Elapsed time: 21 seconds
+[1] "Saving processed object"
+[1] "DONE!"

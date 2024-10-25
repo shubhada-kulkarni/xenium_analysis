@@ -9,13 +9,16 @@
 # 1. folder with Xenium output for which the segmentation needs to be done
 
 in_folder=$1    # xenium folder
-out_id=$2       # output re-segmented folder (without full path)
-geojson=$3      # the geoJSON exported from QuPath
+gson_nuclei=$2  # GeoJSON polygons for nuclei
+gson_cells=$3   # GeoJSON polygons for cell boundaries
 
-# first go to the folder where input data is stored
-path=`dirname $in_folder`
+## first go to the folder where input data is stored
+cd $in_folder
 
-cd $path
+xeniumranger import-segmentation --xenium-bundle=$in_folder --id=qupath_seg --nuclei=$gson_nuclei --cells=$gson_cells
 
-/prj/XeniumProbeDesign/analyser_installation/xeniumranger-xenium2.0/xeniumranger import-segmentation --xenium-bundle $in_folder --id $out_id --nuclei=$geojson --units=pixels --localcores=32 --localmem=128
 ##########################
+#
+# cd /prj/XeniumProbeDesign/analysis_scripts
+
+# xeniumranger import-segmentation --xenium-bundle=/prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_1__20240725__112631/ --id=qupath --nuclei=/prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_1__20240725__112631/morphology_focus_0000.geojson --cells=/prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_1__20240725__112631/morphology_focus_0003.geojson

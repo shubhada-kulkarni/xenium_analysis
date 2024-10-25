@@ -1,0 +1,47 @@
+Tue Sep  3 03:42:14 PM CEST 2024
+Unzipping the trancsripts CSV file
+Done
+Tue Sep  3 03:42:14 PM CEST 2024
+formatting the CSV file
+/prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_1__20240725__112631/transcripts.csv, /prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_1__20240725__112631/formatted_transcripts.csv
+Tue Sep  3 03:43:58 PM CEST 2024
+running baysor
+[15:44:01] Info: Run Re32330f20
+[15:44:02] Info: (2024-09-03) Run Baysor v0.6.2
+[15:44:02] Info: Loading data...
+[15:44:31] Info: Loaded 11104818 transcripts
+[15:44:43] Info: Estimating noise level
+[15:49:25] Info: Done
+[15:51:45] Info: Clustering molecules...
+[16:12:47] Info: Algorithm stopped after 349 iterations. Error: 0.00107. Converged: true.
+[16:12:48] Info: Done
+[16:12:57] Info: Initializing algorithm. Scale: 5.02244088458377, scale std: 2.0805319468767465, initial #components: 2220962, #molecules: 11104818.
+[16:16:58] Info: Using the following additional information about molecules: [:confidence, :cluster, :prior_segmentation]
+[16:16:58] Info: Using 3D coordinates
+[07:12:18] Info: Processing complete.
+[07:14:13] Info: Estimating local colors
+[08:12:40] Info: Estimating boundary polygons
+[08:27:03] Warning: To many values of z. Using 2D polygons
+└ Baysor.Processing /home/skulkarni/.julia/packages/Baysor/vZCu7/src/processing/data_processing/boundary_estimation.jl:143
+[08:27:03] Info: Saving results to /prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_1__20240725__112631/baysor/segmentation.csv
+[08:28:41] Info: Plotting results
+[08:28:44] Info: Plot diagnostics
+[08:28:55] Info: Plot transcript assignment
+[08:29:07] Warning: Keyword argument `bgcolor` is deprecated, use `backgroundcolor` instead.
+└ Makie /home/skulkarni/.julia/packages/Makie/RgxaV/src/makielayout/blocks/legend.jl:23
+[08:37:10] Info: All done!
+Wed Sep  4 08:37:11 AM CEST 2024
+Importing segmentations
+Martian Runtime - v4.0.12
+
+RuntimeError: pipestance 'IMPORT_SEGMENTATION' already exists and is locked by another Martian instance. If you are sure no other Martian instance is running, delete the _lock file in /prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_1__20240725__112631/baysor-segmented and start Martian again.
+
+2024-09-04 08:37:12 Shutting down.
+Saving pipestance info to "/beegfs/prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_1__20240725__112631/baysor-segmented/baysor-segmented.mri.tgz"
+For assistance, upload this file to 10x Genomics by running:
+
+xeniumranger upload <your_email> "/beegfs/prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_1__20240725__112631/baysor-segmented/baysor-segmented.mri.tgz"
+
+Wed Sep  4 08:37:14 AM CEST 2024
+Done
+Re-zipping the transcript CSV file

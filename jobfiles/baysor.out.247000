@@ -1,0 +1,25 @@
+Running baysor import stains
+Wed Sep 11 03:38:29 PM CEST 2024
+[15:38:32] Info: Run Rff04ffa24
+[15:38:32] Info: (2024-09-11) Run Baysor v0.6.2
+[15:38:32] Info: Loading data...
+[15:39:00] Info: Loaded 11104818 transcripts
+[15:39:08] Info: Loading segmentation mask...
+[15:39:15] Info: Done
+[15:39:15] Info: Estimating noise level
+[15:43:36] Info: Done
+[15:45:50] Info: Clustering molecules...
+[16:05:17] Info: Algorithm stopped after 331 iterations. Error: 0.000287. Converged: true.
+[16:05:18] Info: Done
+[16:05:26] Info: Initializing algorithm. Scale: 22.736210219877808, scale std: 14.596860705917162, initial #components: 2220962, #molecules: 11104818.
+[16:09:22] Info: Using the following additional information about molecules: [:confidence, :cluster, :prior_segmentation]
+[16:09:22] Info: Using 3D coordinates
+[00:50:41] Info: Processing complete.
+[00:53:00] Info: Estimating local colors
+[01:52:30] Info: Estimating boundary polygons
+[02:05:32] Warning: To many values of z. Using 2D polygons
+└ Baysor.Processing /home/skulkarni/.julia/packages/Baysor/vZCu7/src/processing/data_processing/boundary_estimation.jl:143
+[02:05:32] Info: Saving results to test/segmentation.csv
+[02:06:58] Info: All done!
+Thu Sep 12 02:06:59 AM CEST 2024
+Done

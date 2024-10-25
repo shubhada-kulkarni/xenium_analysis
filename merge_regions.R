@@ -17,8 +17,9 @@ region2 <- readRDS(region2_file)
 
 print("Merging")
 xenium.obj <- merge(region1, y = region2, add.cell.ids = c("region1", "region2"), project = "slide_name")
+xenium.obj <- subset(xenium.obj, nCount_Xenium > 50)
 
-out_rds <- paste("/prj/XeniumProbeDesign/kidney_Nphs2-mice_Xenium_Martin/xenium_objects_R/", slide_name, "_merged.rds", sep = "")
+out_rds <- paste("/prj/XeniumProbeDesign/heart_human_29072024/xenium_objects_R/", slide_name, "_merged.rds", sep = "")
 saveRDS(xenium.obj, out_rds)
 
 print("Process the merged data")
@@ -34,7 +35,7 @@ print("PCA and UMAP calculations")
 xenium.obj <- RunPCA(xenium.obj)
 xenium.obj <- RunUMAP(xenium.obj, dims = 1:30)
 # Plot to check if the regions perfectly overlap.  If they do, there is no need of batch effect correction
-png(paste("/prj/XeniumProbeDesign/kidney_Nphs2-mice_Xenium_Martin/xenium_objects_R/slide_", slide_name, "_dimplot_regions_overlap.png", sep = ""), width = 800, height = 800)
+png(paste("/prj/XeniumProbeDesign/heart_human_29072024/xenium_objects_R/slide_", slide_name, "_dimplot_regions_overlap.png", sep = ""), width = 800, height = 800)
 DimPlot(xenium.obj, group.by = "region")  
 dev.off()
 print("Finding neighbors and clustering analysis")
@@ -42,7 +43,7 @@ xenium.obj <- FindNeighbors(xenium.obj, dims = 1:30)
 xenium.obj <- FindClusters(xenium.obj)
 
 print("Saving processed object")
-out_rds_processed <- paste("/prj/XeniumProbeDesign/kidney_Nphs2-mice_Xenium_Martin/xenium_objects_R/", slide_name, "_merged_processed.rds", sep = "")
+out_rds_processed <- paste("/prj/XeniumProbeDesign/heart_human_29072024/xenium_objects_R/", slide_name, "_merged_processed.rds", sep = "")
 saveRDS(xenium.obj, out_rds_processed)
 
 print("DONE!")

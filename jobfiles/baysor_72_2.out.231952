@@ -1,0 +1,38 @@
+Tue Sep  3 03:42:35 PM CEST 2024
+Unzipping the trancsripts CSV file
+Done
+Tue Sep  3 03:42:55 PM CEST 2024
+formatting the CSV file
+/prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_2__20240725__112631/transcripts.csv, /prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_2__20240725__112631/formatted_transcripts.csv
+Tue Sep  3 03:44:57 PM CEST 2024
+running baysor
+[15:45:00] Info: Run R7f29fb595
+[15:45:00] Info: (2024-09-03) Run Baysor v0.6.2
+[15:45:00] Info: Loading data...
+[15:45:33] Info: Loaded 13118358 transcripts
+[15:45:48] Info: Estimating noise level
+[15:51:13] Info: Done
+[15:54:06] Info: Clustering molecules...
+[16:21:45] Info: Algorithm stopped after 398 iterations. Error: 0.00502. Converged: true.
+[16:21:46] Info: Done
+[16:22:03] Info: Initializing algorithm. Scale: 5.040529405228512, scale std: 2.0523550510247714, initial #components: 2623670, #molecules: 13118358.
+[16:27:17] Info: Using the following additional information about molecules: [:confidence, :cluster, :prior_segmentation]
+[16:27:17] Info: Using 3D coordinates
+[10:44:00] Info: Processing complete.
+[10:46:33] Info: Estimating local colors
+[11:57:03] Info: Estimating boundary polygons
+[12:16:48] Warning: To many values of z. Using 2D polygons
+└ Baysor.Processing /home/skulkarni/.julia/packages/Baysor/vZCu7/src/processing/data_processing/boundary_estimation.jl:143
+[12:16:48] Info: Saving results to /prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_2__20240725__112631/baysor
+[12:18:43] Info: Plotting results
+[12:18:44] Info: Plot diagnostics
+[12:19:01] Info: Plot transcript assignment
+[12:19:16] Warning: Keyword argument `bgcolor` is deprecated, use `backgroundcolor` instead.
+└ Makie /home/skulkarni/.julia/packages/Makie/RgxaV/src/makielayout/blocks/legend.jl:23
+[12:28:33] Info: All done!
+Wed Sep  4 12:28:34 PM CEST 2024
+Importing segmentations
+ERROR: Failed to canonicalize path to the transcript_assignment. Input: /prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_2__20240725__112631/baysor/segmentation.csv, Error: Not a directory (os error 20)
+Wed Sep  4 12:28:34 PM CEST 2024
+Done
+Re-zipping the transcript CSV file

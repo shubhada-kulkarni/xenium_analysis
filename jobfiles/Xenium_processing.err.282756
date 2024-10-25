@@ -1,0 +1,133 @@
+Loading required package: SeuratObject
+Loading required package: sp
+
+Attaching package: ‘SeuratObject’
+
+The following objects are masked from ‘package:base’:
+
+    %||%, intersect, t
+
+
+Attaching package: ‘Seurat’
+
+The following object is masked from ‘package:base’:
+
+    %||%
+
+10X data contains more than one type and is being returned as a list containing matrices of each type.
+Warning: Feature names cannot have underscores ('_'), replacing with dashes ('-')
+Warning: Feature names cannot have underscores ('_'), replacing with dashes ('-')
+Warning: Feature names cannot have underscores ('_'), replacing with dashes ('-')
+Warning: Feature names cannot have underscores ('_'), replacing with dashes ('-')
+Warning: Feature names cannot have underscores ('_'), replacing with dashes ('-')
+Warning: Feature names cannot have underscores ('_'), replacing with dashes ('-')
+Warning: Feature names cannot have underscores ('_'), replacing with dashes ('-')
+Warning messages:
+1: Not validating FOV objects 
+2: Not validating Centroids objects 
+3: Not validating Centroids objects 
+4: Not validating FOV objects 
+5: Not validating Centroids objects 
+6: Not validating FOV objects 
+7: Not validating FOV objects 
+8: Not validating FOV objects 
+9: Not validating Seurat objects 
+Running SCTransform on assay: Xenium
+Running SCTransform on layer: counts
+vst.flavor='v2' set. Using model with fixed slope and excluding poisson genes.
+`vst.flavor` is set to 'v2' but could not find glmGamPoi installed.
+Please install the glmGamPoi package for much faster estimation.
+--------------------------------------------
+install.packages('BiocManager')
+BiocManager::install('glmGamPoi')
+--------------------------------------------
+Falling back to native (slower) implementation.
+
+Variance stabilizing transformation of count matrix of size 477 by 39578
+Model formula is y ~ log_umi
+Get Negative Binomial regression parameters per gene
+Using 439 genes, 5000 cells
+Found 9 outliers - those will be ignored in fitting/regularization step
+
+Second step: Get residuals using fitted parameters for 477 genes
+Computing corrected count matrix for 477 genes
+Calculating gene attributes
+Wall clock passed: Time difference of 4.07014 mins
+Determine variable features
+Centering data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Getting residuals for block 1(of 8) for counts dataset
+Getting residuals for block 2(of 8) for counts dataset
+Getting residuals for block 3(of 8) for counts dataset
+Getting residuals for block 4(of 8) for counts dataset
+Getting residuals for block 5(of 8) for counts dataset
+Getting residuals for block 6(of 8) for counts dataset
+Getting residuals for block 7(of 8) for counts dataset
+Getting residuals for block 8(of 8) for counts dataset
+Centering data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Finished calculating residuals for counts
+Set default assay to SCT
+There were 50 or more warnings (use warnings() to see the first 50)
+PC_ 1 
+Positive:  TNNT2-FSJ3, ACTG2, TTN-FSJ3, S100A1, DES, ACTN2-FSJ1, FHL2, PTGDS, CNN1, ANKRD1-FSJ 
+	   SLC8A1-BSJ, LPL, GPC1, SMYD2, PLIN4, ACE2, SLC8A1-FSJ, PROX1, RBM20-FSJ2, FSTL3 
+	   HAMP, PEBP4, RRAS2-FSJ, TBX3, SYNPO2L-FSJ, RPL3L-FSJ2, APOBEC2-FSJ1, CLIC6, DST, HMGCS2 
+Negative:  LTBP2, FBLN1, COL1A1-FSJ2, SFRP4, VCAN, FBN1, THBS2, COL5A2, DPT, ASPN 
+	   CD34, VWF, OGN, CRISPLD2, IGF1, PCOLCE, PTN, PDGFRA, PDGFRB, INMT 
+	   MFAP5, TNC, CFHR3, EGFL7, TCF4, MEDAG, TFPI, C7, KCNMA1, FGL2 
+PC_ 2 
+Positive:  LTBP2, FBLN1, SFRP4, COL1A1-FSJ2, VCAN, DPT, ASPN, FBN1, THBS2, COL5A2 
+	   IGF1, OGN, MFAP5, PCOLCE, PDGFRA, PTN, FHL2, TNNT2-FSJ3, CFHR3, CTSK 
+	   CRISPLD2, KCNMA1, TTN-FSJ3, S100A1, DES, MEDAG, ACTN2-FSJ1, PTGDS, SEMA3C, C7 
+Negative:  VWF, EGFL7, MYH11, PECAM1, MMRN2, ACTA2, MCF2L, CLEC14A, BTNL9, APOLD1 
+	   CD93, RAPGEF3, ECSCR, SH2D3C, MYLK, RAMP2, ACKR1, ADGRL4, TCIM, CD34 
+	   SOX18, EDNRB, STC1, CXCL2, ERG, GATA2, PLCG2, CAVIN2, MALL, CAVIN1 
+PC_ 3 
+Positive:  CD14, MS4A6A, MPEG1, CD163, LYVE1, VSIG4, CXCR4, CD4, MS4A4A, PTPRC 
+	   AIF1, LILRB2, CLEC10A, MRC1, CD68, FCGR3A, FGL2, MAMDC2, SPI1, HLA-DQB2 
+	   IRF8, C1orf162, CYTIP, MNDA, HAVCR2, CLEC4E, CSF2RA, ADAM28, CD86, PRDM1 
+Negative:  MYH11, LTBP2, SFRP4, ACTA2, COL1A1-FSJ2, VWF, MYLK, ASPN, FBLN1, COL5A2 
+	   THBS2, PDGFRB, VCAN, CLEC14A, MMRN2, FBN1, CD34, TMEM100, CAVIN1, BTNL9 
+	   APOLD1, DPT, SOX18, RERGL, IGFBP7-FSJ2, GATA2, ADAMTS1, MEDAG, TCF4, RAMP2 
+PC_ 4 
+Positive:  VWF, EGFL7, MCF2L, BTNL9, PECAM1, CD34, MMRN2, RAPGEF3, ACKR1, CLEC14A 
+	   SH2D3C, CD93, APOLD1, ECSCR, TCIM, ADGRL4, EDNRB, CAVIN2, CA4, RAMP2 
+	   LTBP2, TM4SF18, ERG, DNASE1L3, SFRP4, NPDC1, TCF4, CXCL2, SOX18, KIT 
+Negative:  MYH11, ACTA2, MYLK, RERGL, PDGFRB, TMEM100, CNN1, CD14, ADAMTS1, MS4A6A 
+	   LYVE1, CD163, MPEG1, KCNMA1, OGN, HES4, GLIPR1, NTN4, PLAC9, CAVIN1 
+	   BMX, MAMDC2, IGFBP7-FSJ2, VSIG4, CRISPLD2, CD4, MS4A4A, RGS16, LGI4, FGL2 
+PC_ 5 
+Positive:  FBLN1, C7, OGN, CD34, HAMP, PDGFRA, FBN1, PTN, PCOLCE, CRISPLD2 
+	   INMT, MFAP5, APCDD1, VCAN, CFHR3, PDGFRB, FGL2, PTGDS, CYP4B1, STEAP4 
+	   MYC, STC2, TBX3, PLAC9, TFPI, PMP22, FHL2, EGFR, SRPX, EDNRB 
+Negative:  LTBP2, SFRP4, COL1A1-FSJ2, ASPN, KCNMA1, PPP1R1A, MZB1, IGF1, MYH11, SMIM24 
+	   EGFL7, COL17A1, AHSP, COL5A2, CXCL2, TMEM52B, C5orf46, IGSF6, VWF, MS4A6A 
+	   CD1A, MMRN2, CD163, CD14, MPEG1, HEPACAM2, OPRPN, SLAMF1, TCL1A, TIMP4 
+Warning: The default method for RunUMAP has changed from calling Python UMAP via reticulate to the R-native UWOT using the cosine metric
+To use Python UMAP via reticulate, set umap.method to 'umap-learn' and metric to 'correlation'
+This message will be shown once per session
+13:24:07 UMAP embedding parameters a = 0.9922 b = 1.112
+13:24:07 Read 39578 rows and found 30 numeric columns
+13:24:07 Using Annoy for neighbor search, n_neighbors = 30
+13:24:07 Building Annoy index with metric = cosine, n_trees = 50
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+13:24:19 Writing NN index file to temp file /tmp/RtmpDpix9x/file1860a15355f080
+13:24:19 Searching Annoy index using 1 thread, search_k = 3000
+13:24:35 Annoy recall = 100%
+13:24:37 Commencing smooth kNN distance calibration using 1 thread with target n_neighbors = 30
+13:24:39 Initializing from normalized Laplacian + noise (using RSpectra)
+13:24:41 Commencing optimization for 200 epochs, with 1877162 positive edges
+Using method 'umap'
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+13:25:06 Optimization finished
+Computing nearest neighbor graph
+Computing SNN
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Warning: No FOV associated with assay 'SCT', using global default FOV

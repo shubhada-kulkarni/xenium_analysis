@@ -1,0 +1,117 @@
+Loading required package: SeuratObject
+Loading required package: sp
+
+Attaching package: ‘SeuratObject’
+
+The following objects are masked from ‘package:base’:
+
+    %||%, intersect, t
+
+
+Attaching package: ‘Seurat’
+
+The following object is masked from ‘package:base’:
+
+    %||%
+
+Loading required package: Rcpp
+Loading required package: RcppParallel
+
+Attaching package: ‘RcppParallel’
+
+The following object is masked from ‘package:Rcpp’:
+
+    LdFlags
+
+
+Rfast2:  0.1.5.2
+ ___ __ __ __ __    __ __ __ __ __ _             _               __ __ __ __ __     __ __ __ __ __ __   
+|  __ __ __ __  |  |  __ __ __ __ _/            / \             |  __ __ __ __ /   /__ __ _   _ __ __\  
+| |           | |  | |                         / _ \            | |                        / /          
+| |           | |  | |                        / / \ \           | |                       / /          
+| |           | |  | |                       / /   \ \          | |                      / /          
+| |__ __ __ __| |  | |__ __ __ __           / /     \ \         | |__ __ __ __ _        / /__/\          
+|    __ __ __ __|  |  __ __ __ __|         / /__ _ __\ \        |_ __ __ __ _   |      / ___  /           
+|   \              | |                    / _ _ _ _ _ _ \                     | |      \/  / /       
+| |\ \             | |                   / /           \ \                    | |         / /          
+| | \ \            | |                  / /             \ \                   | |        / /          
+| |  \ \           | |                 / /               \ \                  | |       / /          
+| |   \ \__ __ _   | |                / /                 \ \     _ __ __ __ _| |      / /          
+|_|    \__ __ __\  |_|               /_/                   \_\   /_ __ __ __ ___|      \/             team
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+Key ‘Xenium_’ taken, using ‘fov2_’ instead 
+There were 18 warnings (use warnings() to see them)
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+PC_ 1 
+Positive:  CD34, PECAM1, VWF, TCF4, CLEC14A, EGFL7, MMRN2, CD93, ECSCR, SH2D3C 
+	   PDGFRB, APOLD1, FBN1, RAPGEF3, MCF2L, NPDC1, RAMP2, IGFBP7-FSJ2, TFPI, ADGRL4 
+	   INMT, FBLN1, TCIM, MYC, MYLK, SOX18, COL5A2, ERG, ACTA2, BTNL9 
+Negative:  ACTN2-FSJ1, DES, TNNT2-FSJ3, TTN-FSJ3, S100A1, SMYD2, ACTG2, GPC1, FHL2, CNN1 
+	   ANKRD1-FSJ, PTGDS, LPL, PLIN4, SLC8A1-FSJ, SLC8A1-BSJ, FSTL3, RBM20-FSJ2, PROX1, ACE2 
+	   PEBP4, RRAS2-FSJ, RPL3L-FSJ2, DST, APOBEC2-FSJ1, BAMBI, CLIC6, MLIP-FSJ, SYNPO2L-FSJ, PPP1R12B-FSJ 
+PC_ 2 
+Positive:  VWF, MMRN2, PECAM1, APOLD1, EGFL7, MCF2L, ECSCR, CD93, ADGRL4, CAV1 
+	   SH2D3C, RAMP2, CLEC14A, SOX18, BTNL9, RAPGEF3, CAVIN2, MALL, ERG, ADAMTS1 
+	   STC1, TCIM, EDNRB, TCF15, CAVIN1, SOX17, PLCG2, GATA2, GNG11, MEF2C 
+Negative:  LTBP2, FBLN1, VCAN, COL1A1-FSJ2, SFRP4, THBS2, FBN1, COL5A2, DPT, PCOLCE 
+	   PDGFRA, ASPN, IGF1, OGN, MFAP5, PTN, CTSK, CFHR3, CRISPLD2, APCDD1 
+	   FGL2, KCNMA1, C7, MEDAG, BASP1, GLIPR1, MAMDC2, PMP22, CD4, EGFR 
+PC_ 3 
+Positive:  MS4A6A, MPEG1, CD14, VSIG4, CD163, AIF1, LILRB2, PTPRC, CD4, MS4A4A 
+	   MRC1, SPI1, CLEC10A, CXCR4, FCGR3A, LYVE1, CD68, HLA-DQB2, C1orf162, CSF2RA 
+	   MNDA, IRF8, HAVCR2, CYTIP, CD86, ADAM28, CLEC4E, GPR183, FGL2, FCGR1A 
+Negative:  SFRP4, LTBP2, COL1A1-FSJ2, ASPN, COL5A2, FBLN1, THBS2, FBN1, VCAN, DPT 
+	   MFAP5, IGF1, MEDAG, CD34, CTSK, PDGFRA, PCOLCE, CFHR3, TIMP4, CRISPLD2 
+	   TCF4, IGFBP7-FSJ2, OGN, PDGFRB, TFPI, PTN, CLEC14A, APCDD1, EGFR, TMEM100 
+PC_ 4 
+Positive:  MYH11, EGFL7, CD163, MPEG1, LILRB2, ACKR1, MS4A6A, VSIG4, MZB1, MS4A4A 
+	   TCL1A, CD14, HEPACAM2, PTPRC, CLEC10A, CD1A, MMRN1, MRC1, OPRPN, RAPGEF3 
+	   CD86, SNCG, CSF2RA, IL2RA, SPI1, IRF8, COL17A1, AIF1, CCR2, CLEC4E 
+Negative:  FHL2, ACTG2, DST, FSTL3, CNN1, GEM, TTN-FSJ3, PMP22, LPL, SRPX 
+	   CAV1, SEMA3C, GPC1, ACTN2-FSJ1, GNG11, PTGDS, MATR3-FSJ, SMYD2, SLC8A1-FSJ, ADAMTS1 
+	   TBX3, DES, SLC8A1-BSJ, MFAP5, TNNT2-FSJ3, RBM20-FSJ2, RRAS2-FSJ, PEBP4, PTN, PDGFRB 
+PC_ 5 
+Positive:  PPP1R1A, MZB1, SMIM24, GPC3, COL17A1, AHSP, TMEM52B, CD1A, HEPACAM2, TCL1A 
+	   OPRPN, TBX3, C5orf46, ACTA2, IGSF6, MYH11, SLAMF1, MLPH, MMRN1, LGI4 
+	   RBP5, HAMP, BAMBI, CXCL6, MCEMP1, ACKR1, MYLK, EDN1, ERBB2, SNCG 
+Negative:  ANKRD1-FSJ, BTNL9, EDNRB, CD34, MFAP5, TCF4, DPT, RAMP2, TCF15, APOLD1 
+	   ADGRL4, SOX18, SLC8A1-BSJ, CAV1, CLEC14A, CA4, MEF2C, MALL, S100A1, ASPN 
+	   SFRP4, ACTN2-FSJ1, STC1, TCIM, DES, HIGD1B, GNG11, TIMP4, CD93, TTN-FSJ3 
+Warning: The default method for RunUMAP has changed from calling Python UMAP via reticulate to the R-native UWOT using the cosine metric
+To use Python UMAP via reticulate, set umap.method to 'umap-learn' and metric to 'correlation'
+This message will be shown once per session
+15:05:03 UMAP embedding parameters a = 0.9922 b = 1.112
+15:05:03 Read 47523 rows and found 30 numeric columns
+15:05:03 Using Annoy for neighbor search, n_neighbors = 30
+15:05:03 Building Annoy index with metric = cosine, n_trees = 50
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+15:05:12 Writing NN index file to temp file /tmp/RtmpSQmewY/file1876e456c0d203
+15:05:12 Searching Annoy index using 1 thread, search_k = 3000
+15:05:31 Annoy recall = 100%
+15:05:32 Commencing smooth kNN distance calibration using 1 thread with target n_neighbors = 30
+15:05:35 Initializing from normalized Laplacian + noise (using RSpectra)
+15:05:37 Commencing optimization for 200 epochs, with 2282296 positive edges
+Using method 'umap'
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+15:06:08 Optimization finished
+Computing nearest neighbor graph
+Computing SNN
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|

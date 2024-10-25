@@ -1,0 +1,301 @@
+Tue Sep  3 11:19:20 AM CEST 2024
+formatting the CSV file
+Tue Sep  3 11:19:20 AM CEST 2024
+running baysor
+Tue Sep  3 11:19:20 AM CEST 2024
+Importing segmentations
+Martian Runtime - v4.0.12
+Serving UI at http://gpu-g1-2:39275?auth=7LQfcHQTp9xauvYpLyPFhWkE_7uQkTI_bEIvs18qvAs
+
+Running preflight checks (please wait)...
+2024-09-03 11:20:35 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_SETUP_INPUTS
+2024-09-03 11:20:35 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_SETUP_INPUTS.fork0.split
+2024-09-03 11:20:48 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_SETUP_INPUTS
+2024-09-03 11:20:48 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_SETUP_INPUTS.fork0.join
+2024-09-03 11:21:16 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_SETUP_INPUTS
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.SETUP_COUNTER_CS
+2024-09-03 11:21:17 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.SETUP_COUNTER_CS.fork0.split
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.IMPORT_NUCLEAR_SEGMENTATION_DATASET
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_TRANSCRIPT_ASSIGNMENTS
+2024-09-03 11:21:17 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_TRANSCRIPT_ASSIGNMENTS.fork0.split
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.IMPORT_CELL_SEGMENTATION_DATASET
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RELABEL_TRANSCRIPTS
+2024-09-03 11:21:17 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RELABEL_TRANSCRIPTS.fork0.split
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RESEGMENT.SEGMENT_NUCLEI
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_MORPHOLOGY_PLOTS
+2024-09-03 11:21:17 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_MORPHOLOGY_PLOTS.fork0.split
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.PAIR_CELLS_NUCLEI
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RESEGMENT.SETUP_CELL_SEGMENTOR_FINALIZER
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.EXPAND_NUCLEI
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RESEGMENT._CELL_SEGMENTOR_FINALIZER.SEGMENT_INTERIOR
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RESEGMENT._CELL_SEGMENTOR_FINALIZER.SEGMENT_CELLS
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.GENERATE_CELLS_DATASET
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RESEGMENT._CELL_SEGMENTOR_FINALIZER.PAIR_CELLS_NUCLEI
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.SIMPLE_MERGE_METRICS
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RESEGMENT._CELL_SEGMENTOR_FINALIZER.EXPAND_NUCLEI
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RESEGMENT._CELL_SEGMENTOR_FINALIZER.GENERATE_CELLS_DATASET
+2024-09-03 11:21:17 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_SEGMENTATION.XR_FINALIZE_IMPORT_SEGMENTATION
+2024-09-03 11:21:30 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.SETUP_COUNTER_CS
+2024-09-03 11:21:30 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.SETUP_COUNTER_CS.fork0.join
+2024-09-03 11:21:32 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RELABEL_TRANSCRIPTS
+2024-09-03 11:21:32 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RELABEL_TRANSCRIPTS.fork0.join
+2024-09-03 11:21:37 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.SETUP_COUNTER_CS
+2024-09-03 11:21:40 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_RELABEL_TRANSCRIPTS
+2024-09-03 11:21:53 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_MORPHOLOGY_PLOTS
+2024-09-03 11:21:53 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_MORPHOLOGY_PLOTS.fork0.join
+2024-09-03 11:21:55 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_TRANSCRIPT_ASSIGNMENTS
+2024-09-03 11:21:56 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_TRANSCRIPT_ASSIGNMENTS.fork0.join
+2024-09-03 11:22:16 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_MORPHOLOGY_PLOTS
+2024-09-03 11:23:47 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.XR_IMPORT_TRANSCRIPT_ASSIGNMENTS
+2024-09-03 11:23:47 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.MERGE_METRICS
+2024-09-03 11:23:47 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.MERGE_METRICS.fork0.chnk0.main
+2024-09-03 11:23:47 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.SELECT_CELLS_DATASET
+2024-09-03 11:23:47 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.SELECT_CELLS_DATASET.fork0.chnk0.main
+2024-09-03 11:23:48 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.SELECT_CELLS_DATASET
+2024-09-03 11:23:49 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.COMPUTE_NUCLEAR_DISTANCE
+2024-09-03 11:23:49 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.COMPUTE_NUCLEAR_DISTANCE.fork0.split
+2024-09-03 11:23:49 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.WRITE_CELL_NUCLEI_BOUNDARIES_FILES
+2024-09-03 11:23:49 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.WRITE_CELL_NUCLEI_BOUNDARIES_FILES.fork0.split
+2024-09-03 11:23:49 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_GENE_MATRIX
+2024-09-03 11:23:49 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_GENE_MATRIX.fork0.split
+2024-09-03 11:23:50 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.MERGE_METRICS
+2024-09-03 11:23:56 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.COMPUTE_NUCLEAR_DISTANCE
+2024-09-03 11:23:56 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.COMPUTE_NUCLEAR_DISTANCE.fork0.join
+2024-09-03 11:24:02 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_GENE_MATRIX
+2024-09-03 11:24:02 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_GENE_MATRIX.fork0.join
+2024-09-03 11:24:14 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.WRITE_CELL_NUCLEI_BOUNDARIES_FILES
+2024-09-03 11:24:14 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.WRITE_CELL_NUCLEI_BOUNDARIES_FILES.fork0.join
+2024-09-03 11:24:54 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_GENE_MATRIX
+2024-09-03 11:24:54 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CONCATENATE_MATRIX
+2024-09-03 11:24:54 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CONCATENATE_MATRIX.fork0.chnk0.main
+2024-09-03 11:25:04 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CONCATENATE_MATRIX
+2024-09-03 11:25:05 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_DECODING_METRICS_CS
+2024-09-03 11:25:05 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_DECODING_METRICS_CS.fork0.split
+2024-09-03 11:25:05 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_MATRIX_ZARR
+2024-09-03 11:25:05 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_MATRIX_ZARR.fork0.split
+2024-09-03 11:25:05 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.SETUP_ANALYZER
+2024-09-03 11:25:05 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.SETUP_ANALYZER.fork0.chnk0.main
+2024-09-03 11:25:05 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_MATRIX_MTX
+2024-09-03 11:25:05 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_MATRIX_MTX.fork0.split
+2024-09-03 11:25:23 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.COMPUTE_NUCLEAR_DISTANCE
+2024-09-03 11:25:23 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_TRANSCRIPTS_CSV
+2024-09-03 11:25:23 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_TRANSCRIPTS_CSV.fork0.split
+2024-09-03 11:25:24 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.SETUP_ANALYZER
+2024-09-03 11:25:24 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_PCA
+2024-09-03 11:25:24 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_PCA.fork0.split
+2024-09-03 11:25:25 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_PCA
+2024-09-03 11:25:25 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_PCA.fork0.chnk0.main
+2024-09-03 11:25:26 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_MATRIX_ZARR
+2024-09-03 11:25:26 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_MATRIX_ZARR.fork0.join
+2024-09-03 11:25:27 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_MATRIX_MTX
+2024-09-03 11:25:27 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_MATRIX_MTX.fork0.join
+2024-09-03 11:25:51 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_MATRIX_ZARR
+2024-09-03 11:25:54 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_TRANSCRIPTS_CSV
+2024-09-03 11:25:55 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_TRANSCRIPTS_CSV.fork0.join
+2024-09-03 11:25:59 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_MATRIX_MTX
+2024-09-03 11:26:03 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_PCA
+2024-09-03 11:26:03 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_PCA.fork0.join
+2024-09-03 11:26:04 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_PCA
+2024-09-03 11:26:04 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_TSNE
+2024-09-03 11:26:04 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_UMAP
+2024-09-03 11:26:04 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_UMAP.fork0.split
+2024-09-03 11:26:04 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_KMEANS
+2024-09-03 11:26:04 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_KMEANS.fork0.split
+2024-09-03 11:26:04 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_GRAPH_CLUSTERING
+2024-09-03 11:26:04 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_GRAPH_CLUSTERING.fork0.split
+2024-09-03 11:26:05 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_GRAPH_CLUSTERING
+2024-09-03 11:26:05 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_GRAPH_CLUSTERING.fork0.chnk0.main
+2024-09-03 11:26:06 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_UMAP
+2024-09-03 11:26:06 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_UMAP.fork0.chnk0.main
+2024-09-03 11:26:23 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_KMEANS
+2024-09-03 11:26:23 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_KMEANS.fork0.chnk0.main
+2024-09-03 11:26:23 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_KMEANS.fork0.chnk1.main
+2024-09-03 11:26:23 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_KMEANS.fork0.chnk2.main
+2024-09-03 11:26:23 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_KMEANS.fork0.chnk3.main
+2024-09-03 11:26:23 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_KMEANS.fork0.chnk4.main
+2024-09-03 11:26:23 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_KMEANS.fork0.chnk5.main
+2024-09-03 11:26:24 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_KMEANS.fork0.chnk6.main
+2024-09-03 11:26:24 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_KMEANS.fork0.chnk7.main
+2024-09-03 11:26:24 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_KMEANS.fork0.chnk8.main
+2024-09-03 11:29:37 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_DECODING_METRICS_CS
+2024-09-03 11:29:38 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_DECODING_METRICS_CS.fork0.join
+2024-09-03 11:30:15 [runtime] (update)          ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.WRITE_CELL_NUCLEI_BOUNDARIES_FILES.fork0 join_running
+2024-09-03 11:30:18 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.WRITE_CELL_NUCLEI_BOUNDARIES_FILES
+2024-09-03 11:30:20 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_KMEANS
+2024-09-03 11:30:20 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_KMEANS.fork0.join
+2024-09-03 11:30:33 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_KMEANS
+2024-09-03 11:32:08 [runtime] (update)          ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_TRANSCRIPTS_CSV.fork0 join_running
+2024-09-03 11:32:14 [runtime] (update)          ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_GRAPH_CLUSTERING.fork0 chunks_running
+2024-09-03 11:32:14 [runtime] (update)          ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_UMAP.fork0 chunks_running
+2024-09-03 11:33:29 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_GRAPH_CLUSTERING
+2024-09-03 11:33:29 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_GRAPH_CLUSTERING.fork0.join
+2024-09-03 11:33:31 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_GRAPH_CLUSTERING
+2024-09-03 11:33:31 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.COMBINE_CLUSTERING
+2024-09-03 11:33:31 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.COMBINE_CLUSTERING.fork0.chnk0.main
+2024-09-03 11:33:37 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.COMBINE_CLUSTERING
+2024-09-03 11:33:37 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2024-09-03 11:33:37 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.split
+2024-09-03 11:33:38 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2024-09-03 11:33:38 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk00.main
+2024-09-03 11:33:38 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk01.main
+2024-09-03 11:33:38 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk02.main
+2024-09-03 11:33:38 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk03.main
+2024-09-03 11:33:38 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk04.main
+2024-09-03 11:33:38 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk05.main
+2024-09-03 11:33:38 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk06.main
+2024-09-03 11:33:38 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk07.main
+2024-09-03 11:33:38 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk08.main
+2024-09-03 11:33:38 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk09.main
+2024-09-03 11:35:30 [runtime] (update)          ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_DECODING_METRICS_CS.fork0 join_running
+2024-09-03 11:35:42 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_DECODING_METRICS_CS
+2024-09-03 11:35:42 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_SAMPLE_METRICS
+2024-09-03 11:35:42 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_SAMPLE_METRICS.fork0.split
+2024-09-03 11:36:06 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_SAMPLE_METRICS
+2024-09-03 11:36:06 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_SAMPLE_METRICS.fork0.join
+2024-09-03 11:36:06 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2024-09-03 11:36:06 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.join
+2024-09-03 11:36:08 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2024-09-03 11:36:31 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_SAMPLE_METRICS
+2024-09-03 11:36:39 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.CREATE_TRANSCRIPTS_CSV
+2024-09-03 11:38:16 [runtime] (update)          ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_UMAP.fork0 chunks_running
+2024-09-03 11:39:42 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_UMAP
+2024-09-03 11:39:42 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_UMAP.fork0.join
+2024-09-03 11:39:43 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.RUN_UMAP
+2024-09-03 11:39:43 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.SUMMARIZE_ANALYSIS
+2024-09-03 11:39:43 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.SUMMARIZE_ANALYSIS.fork0.split
+2024-09-03 11:39:45 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.SUMMARIZE_ANALYSIS
+2024-09-03 11:39:45 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.SUMMARIZE_ANALYSIS.fork0.join
+2024-09-03 11:39:48 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.INSITU_ANALYZER.SUMMARIZE_ANALYSIS
+2024-09-03 11:39:49 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.SELECT_ANALYZER_OUTS
+2024-09-03 11:39:49 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.SELECT_ANALYZER_OUTS.fork0.chnk0.main
+2024-09-03 11:39:51 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.INSITU_COUNTER_CORE.SELECT_ANALYZER_OUTS
+2024-09-03 11:39:51 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_CELL_METRICS
+2024-09-03 11:39:51 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_CELL_METRICS.fork0.split
+2024-09-03 11:40:23 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_CELL_METRICS
+2024-09-03 11:40:23 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_CELL_METRICS.fork0.join
+2024-09-03 11:41:16 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.GENERATE_CELL_METRICS
+2024-09-03 11:41:16 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.MERGE_DETAILS
+2024-09-03 11:41:16 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.MERGE_DETAILS.fork0.chnk0.main
+2024-09-03 11:41:16 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.MERGE_METRICS
+2024-09-03 11:41:16 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.MERGE_METRICS.fork0.chnk0.main
+2024-09-03 11:41:19 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.MERGE_DETAILS
+2024-09-03 11:41:19 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.METRIC_CALCULATOR_CS.MERGE_METRICS
+2024-09-03 11:41:19 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.MERGE_METRICS
+2024-09-03 11:41:19 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.MERGE_METRICS.fork0.chnk0.main
+2024-09-03 11:41:23 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.MERGE_METRICS
+2024-09-03 11:41:23 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.UPDATE_COUNT_METRICS
+2024-09-03 11:41:23 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.UPDATE_COUNT_METRICS.fork0.chnk0.main
+2024-09-03 11:41:27 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.UPDATE_COUNT_METRICS
+2024-09-03 11:41:27 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.CREATE_METRICS_SUMMARY_CSV_CS
+2024-09-03 11:41:27 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.CREATE_METRICS_SUMMARY_CSV_CS.fork0.chnk0.main
+2024-09-03 11:41:27 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.CREATE_WEB_SUMMARY_CS
+2024-09-03 11:41:27 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.CREATE_WEB_SUMMARY_CS.fork0.split
+2024-09-03 11:41:31 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.CREATE_METRICS_SUMMARY_CSV_CS
+2024-09-03 11:42:03 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.CREATE_WEB_SUMMARY_CS
+2024-09-03 11:42:03 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.CREATE_WEB_SUMMARY_CS.fork0.join
+2024-09-03 11:43:35 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.CREATE_WEB_SUMMARY_CS
+2024-09-03 11:43:36 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.FORMAT_OUTPUTS_CS
+2024-09-03 11:43:36 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.FORMAT_OUTPUTS_CS.fork0.split
+2024-09-03 11:43:44 [runtime] (split_complete)  ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.FORMAT_OUTPUTS_CS
+2024-09-03 11:43:44 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.FORMAT_OUTPUTS_CS.fork0.join
+2024-09-03 11:44:02 [runtime] (join_complete)   ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.FORMAT_OUTPUTS_CS
+2024-09-03 11:44:02 [runtime] (ready)           ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.MAKE_OUTPUT_MANIFEST
+2024-09-03 11:44:02 [runtime] (run:local)       ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.MAKE_OUTPUT_MANIFEST.fork0.chnk0.main
+2024-09-03 11:44:02 [runtime] (chunks_complete) ID.IMPORT_SEGMENTATION.XENIUM_RANGER_CS.INSITU_COUNTER_CS.MAKE_OUTPUT_MANIFEST
+
+Outputs:
+- metrics_summary:                            /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/metrics_summary.csv
+- transcripts:                                /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/transcripts.zarr.zip
+- Transcript info CSV:                        /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/transcripts.csv.gz
+- Transcript info parquet:                    /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/transcripts.parquet
+- Cell info CSV:                              /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/cells.csv.gz
+- Cell info parquet:                          /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/cells.parquet
+- Cell segmentation result:                   /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/cells.zarr.zip
+- Cell segmentation nucleus polygons CSV:     /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/nucleus_boundaries.csv.gz
+- Cell segmentation cell polygons CSV:        /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/cell_boundaries.csv.gz
+- Cell segmentation nucleus polygons parquet: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/nucleus_boundaries.parquet
+- Cell segmentation cell polygons parquet:    /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/cell_boundaries.parquet
+- Clustering result in zarr.zip format:       /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/analysis.zarr.zip
+- Cell-feature matrix in zarr.zip format:     /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/cell_feature_matrix.zarr.zip
+- Cell-feature matrix in h5 format:           /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/cell_feature_matrix.h5
+- morphology:                                 /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/morphology.ome.tif
+- CS multi-file OME-TIFF (AUTOFOCUS):         /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/morphology_focus
+- Metadata for Xenium Explorer:               /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/experiment.xenium
+- Customer-facing web summary:                /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/analysis_summary.html
+- Cell-feature matrix in MEX format:          /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/cell_feature_matrix
+- Clustering result in csv format:            /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/analysis
+- Auxiliary output files:
+    morphology_fov_locations:    /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/morphology_fov_locations.json
+    overview_scan:               /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/overview_scan.png
+    overview_scan_fov_locations: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/overview_scan_fov_locations.json
+    per_cycle_channel_images:    {
+      cycle_01_blu: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_01_blu.tiff
+      cycle_01_grn: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_01_grn.tiff
+      cycle_01_red: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_01_red.tiff
+      cycle_01_yel: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_01_yel.tiff
+      cycle_02_blu: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_02_blu.tiff
+      cycle_02_grn: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_02_grn.tiff
+      cycle_02_red: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_02_red.tiff
+      cycle_02_yel: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_02_yel.tiff
+      cycle_03_blu: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_03_blu.tiff
+      cycle_03_grn: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_03_grn.tiff
+      cycle_03_red: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_03_red.tiff
+      cycle_03_yel: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_03_yel.tiff
+      cycle_04_blu: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_04_blu.tiff
+      cycle_04_grn: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_04_grn.tiff
+      cycle_04_red: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_04_red.tiff
+      cycle_04_yel: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_04_yel.tiff
+      cycle_05_blu: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_05_blu.tiff
+      cycle_05_grn: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_05_grn.tiff
+      cycle_05_red: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_05_red.tiff
+      cycle_05_yel: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_05_yel.tiff
+      cycle_06_blu: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_06_blu.tiff
+      cycle_06_grn: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_06_grn.tiff
+      cycle_06_red: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_06_red.tiff
+      cycle_06_yel: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_06_yel.tiff
+      cycle_07_blu: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_07_blu.tiff
+      cycle_07_grn: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_07_grn.tiff
+      cycle_07_red: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_07_red.tiff
+      cycle_07_yel: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_07_yel.tiff
+      cycle_08_blu: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_08_blu.tiff
+      cycle_08_grn: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_08_grn.tiff
+      cycle_08_red: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_08_red.tiff
+      cycle_08_yel: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_08_yel.tiff
+      cycle_09_blu: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_09_blu.tiff
+      cycle_09_grn: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_09_grn.tiff
+      cycle_09_red: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_09_red.tiff
+      cycle_09_yel: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_09_yel.tiff
+      cycle_10_blu: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_10_blu.tiff
+      cycle_10_grn: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_10_grn.tiff
+      cycle_10_red: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_10_red.tiff
+      cycle_10_yel: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_10_yel.tiff
+      cycle_11_blu: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_11_blu.tiff
+      cycle_11_grn: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_11_grn.tiff
+      cycle_11_red: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_11_red.tiff
+      cycle_11_yel: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_11_yel.tiff
+      cycle_12_blu: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_12_blu.tiff
+      cycle_12_grn: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_12_grn.tiff
+      cycle_12_red: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_12_red.tiff
+      cycle_12_yel: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_12_yel.tiff
+      cycle_13_blu: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_13_blu.tiff
+      cycle_13_grn: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_13_grn.tiff
+      cycle_13_red: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_13_red.tiff
+      cycle_13_yel: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_13_yel.tiff
+      cycle_14_blu: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_14_blu.tiff
+      cycle_14_grn: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_14_grn.tiff
+      cycle_14_red: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_14_red.tiff
+      cycle_14_yel: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_14_yel.tiff
+      cycle_15_blu: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_15_blu.tiff
+      cycle_15_grn: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_15_grn.tiff
+      cycle_15_red: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_15_red.tiff
+      cycle_15_yel: /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/aux_outputs/per_cycle_channel_images/cycle_15_yel.tiff
+    }
+- Gene panel JSON:                            /prj/XeniumProbeDesign/analysis_scripts/baysor-demo/outs/gene_panel.json
+
+Waiting 6 seconds for UI to do final refresh.
+Pipestance completed successfully!
+
+2024-09-03 11:44:10 Shutting down.
+Saving pipestance info to "/beegfs/prj/XeniumProbeDesign/analysis_scripts/baysor-demo/baysor-demo.mri.tgz"
+Tue Sep  3 11:44:15 AM CEST 2024
+Done

@@ -1,0 +1,46 @@
+Tue Sep 10 11:41:21 AM CEST 2024
+Unzipping the trancsripts CSV file
+Done
+Tue Sep 10 11:41:21 AM CEST 2024
+formatting the CSV file
+/prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_1__20240725__112631/transcripts.csv, /prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_1__20240725__112631/formatted_transcripts.csv
+running baysor
+[11:41:26] Info: Run Redf309448
+[11:41:27] Info: (2024-09-10) Run Baysor v0.6.2
+[11:41:27] Info: Loading data...
+[11:42:11] Info: Loaded 11104818 transcripts
+[11:42:29] Info: Estimating noise level
+[11:49:38] Info: Done
+[11:53:16] Info: Clustering molecules...
+[12:22:51] Info: Algorithm stopped after 308 iterations. Error: 0.00256. Converged: true.
+[12:22:52] Info: Done
+[12:23:06] Info: Initializing algorithm. Scale: 5.02244088458377, scale std: 2.0805319468767465, initial #components: 2220962, #molecules: 11104818.
+[12:29:37] Info: Using the following additional information about molecules: [:confidence, :cluster, :prior_segmentation]
+[12:29:37] Info: Using 3D coordinates
+[08:24:16] Info: Processing complete.
+[08:27:22] Info: Estimating local colors
+[09:53:45] Info: Estimating boundary polygons
+[10:15:41] Warning: To many values of z. Using 2D polygons
+└ Baysor.Processing /home/skulkarni/.julia/packages/Baysor/vZCu7/src/processing/data_processing/boundary_estimation.jl:143
+[10:15:41] Info: Saving results to /prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_1__20240725__112631/baysor0.7/segmentation.csv
+[10:18:14] Info: Plotting results
+[10:18:18] Info: Plot diagnostics
+[10:18:36] Info: Plot transcript assignment
+[10:18:54] Warning: Keyword argument `bgcolor` is deprecated, use `backgroundcolor` instead.
+└ Makie /home/skulkarni/.julia/packages/Makie/RgxaV/src/makielayout/blocks/legend.jl:23
+[10:30:30] Info: All done!
+Wed Sep 11 10:30:31 AM CEST 2024
+Importing segmentations
+Martian Runtime - v4.0.12
+
+RuntimeError: pipestance 'IMPORT_SEGMENTATION' already exists with different invocation file _invocation_baysor-segmented.mro
+
+2024-09-11 10:30:31 Shutting down.
+Saving pipestance info to "/beegfs/prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_1__20240725__112631/baysor-segmented/baysor-segmented.mri.tgz"
+For assistance, upload this file to 10x Genomics by running:
+
+xeniumranger upload <your_email> "/beegfs/prj/XeniumProbeDesign/heart_human_29072024/output-XETG00046__0018072__Region_1__20240725__112631/baysor-segmented/baysor-segmented.mri.tgz"
+
+Wed Sep 11 10:30:39 AM CEST 2024
+Done
+Re-zipping the transcript CSV file
